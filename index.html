@@ -5,8 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <aside>
+        <div class="logo">
+            <img src="images/odin-lined.png" alt="Logo" class="logo-img">
+            Odin
+        </div>
+        <img src="images/bg-img-small.jpg" alt="Leaf image" class="background">
+    </aside>
+
+    <main class="flex-item">
+        <div class="description">
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br> Sign up <em>now</em> to get started.</h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <h3>Let's do this</h3>
+
+                <ul>
+                    <li>
+                        <label for="first-name">First name <span class="required">*</span></label>
+                        <input type="text" name="first-name" id="first-name">
+                    </li>
+
+                    <li>
+                        <label for="last-name">Last name <span class="required">*</span></label>
+                        <input type="text" name="last-name" id="last-name">
+                    </li>
+
+                    <li>
+                        <label for="email">Email <span class="required">*</span class="required"></label>
+                        <input type="email" name="email" id="email">
+                    </li>
+
+                    <li>
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone" id="phone">
+                    </li>
+
+                    <li>
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" name="password" id="password">
+                        <span class="error">Passwords don't match</span>
+                    </li>
+
+                    <li>
+                        <label for="confirm-password">Confirm password <span class="required">*</span></label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <div class="form-btn">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+
+        <div class="login-span">
+            Already have an account? <span><a href="#">Log in</a></span>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
